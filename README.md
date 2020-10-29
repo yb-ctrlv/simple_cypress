@@ -12,43 +12,15 @@
 * 종단 간 테스트
 
 설치
-  npm i -D cypress
-  
-eslint 사용시
 ```
-  eslint -init
-  npm i -D eslint-plugin-cypress
+  npm i
 ```
-.eslintrc 설정*
-```
-  module.exports = {
-    "env": {
-      "cypress/globals": true
-    },
-    "plugins": [
-      "cypress"
-    ],
-    "extends": [
-      "plugin:cypress/recommended"
-    ],
-    "rules": {
-      "cypress/no-assigning-return-values": "error",
-      "cypress/no-unnecessary-waiting": "error",
-      "cypress/assertion-before-screenshot": "warn",
-      "cypress/no-force": "warn",
-      "cypress/no-async-tests": "error"
-    }
-  };
-```
-최초 실행
-```
-  ./node_modules/.bin/cypress open
-  or
-  npx cypress open
-```
+
 실행
 ```
   npm run cypress:open
+  npm run lint
+  npm run lintfix
 ```
 
 지원되는 브라우저
