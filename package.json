@@ -1,0 +1,18 @@
+{
+  "name": "cypress_simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "lint": "eslint -c .eslintrc.js --ext .js cypress/",
+    "lintfix": "eslint -c .eslintrc.js --ext .js cypress/ --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^5.5.0",
+    "eslint": "^7.12.1",
+    "eslint-plugin-cypress": "^2.11.2"
+  }
+}
